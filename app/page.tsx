@@ -68,6 +68,107 @@ export default function home() {
 
         </section>
 
+        {/* PROJETOS */}
+        <section className="min-h-screen px-8 py-16">
+
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Projetos
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-8">
+
+            {/* CARD 1 */}
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+
+              <img src="https://picsum.photos/400/300" alt="Projeto 1" />
+
+              <div className="p-4">
+
+                <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                  Projeto Calculadora
+                </h3>
+
+                <p className="text-gray-600 mb-4">
+                  Uma calculadora feita com HTML, CSS e JavaScript com operações basicas.
+                </p>
+
+                <div className="flex gap-4 justify-center" >
+
+                  <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                    Ver Site
+                  </a>
+
+                  <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                    GitHub
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            
+            {/* CARD 2 */}
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+
+              <img src="https://picsum.photos/seed/p6/400/300" alt="Projeto 2" />
+
+              <div className="p-4">
+
+                <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                  Calculadora Saque-FGTS
+                </h3>
+
+                <p className="text-gray-600 mb-4">
+                  Calculadora do Saque-Aniversário do FGTS desenvolvida com HTML, CSS e JavaScript.
+                </p>
+
+                <div className="flex gap-4 justify-center" >
+
+                  <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                    Ver Site
+                  </a>
+
+                  <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                    GitHub
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+
+              <img src="https://picsum.photos/seed/p1/400/300" alt="Projeto 2" />
+
+              <div className="p-4">
+
+                <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                  Calculadora Rescisão CLT
+                </h3>
+
+                <p className="text-gray-600 mb-4">
+                  Aplicação para gerenciar tarefas com armazenamento
+                  local no navegador.
+                </p>
+
+                <div className="flex gap-4 justify-center" >
+
+                  <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                    Ver Site
+                  </a>
+
+                  <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                    GitHub
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>          
+
+        </section>
+
 
     </div>
   );
