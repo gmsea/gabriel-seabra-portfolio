@@ -5,10 +5,6 @@ export default function home() {
       {/* NAVBAR */}
       <header className="w-full bg-black text-white p-4 flex justify-between items-center">
 
-        <h1 className="text-xl font-bold">
-          Gabriel Seabra
-        </h1>
-
         <nav className="flex gap-6">
           <a href="#" className="hover:text-gray-400">Início</a>
           <a href="#" className="hover:text-gray-400">Sobre</a>
@@ -18,8 +14,8 @@ export default function home() {
         </nav>
       </header>
 
-       {/* HERO */}
-      <section className="h-[80vh] flex items-center justify-center gap-16">
+      {/* HERO */}
+      <section className="min-h-screen flex items-center justify-center gap-16 py-8">
 
         {/* TEXTO */}
         <div>
@@ -36,229 +32,254 @@ export default function home() {
           </p>
         </div>
 
-      {/* IMAGEM */}
-      <div className="animate-bounce">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" width={220}/>
-      </div>
+        {/* IMAGEM */}
+        <div className="animate-bounce">
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" width={220} />
+        </div>
 
       </section>
 
-       {/* SOBRE */}
-        <section className="min-h-screen flex items-center justify-center bg-gray-0 px-8">
+      {/* SOBRE */}
+      <section className="min-h-screen flex items-center justify-center bg-gray-0 px-8">
 
-          <div className="max-w-3xl text-center">
+        <div className="max-w-3xl text-center">
 
-            <h2 className="text-4xl font-bold mb-6">
-              Sobre Mim
-            </h2>
-
-            <p className="text-lg text-gray-400 leading-relaxed">
-              Olá! Meu nome é Gabriel Seabra e estou em transição para a área de
-              desenvolvimento Full Stack. Atualmente estudo tecnologias como
-              HTML, CSS, JavaScript, React e Next.js, desenvolvendo projetos
-              práticos para aprimorar minhas habilidades.
-
-              Tenho experiência profissional em outras áreas, o que me trouxe
-              disciplina, responsabilidade e foco em resolver problemas.
-              Meu objetivo é conquistar minha primeira oportunidade como
-              desenvolvedor e evoluir constantemente na área de tecnologia.
-            </p>
-
-          </div>
-
-        </section>
-
-        {/* PROJETOS */}
-        <section className="min-h-screen px-8 py-16">
-
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Projetos
+          <h2 className="text-4xl font-bold mb-6">
+            Sobre Mim
           </h2>
 
-          <div className="flex flex-wrap justify-center gap-8">
+          <p className="text-lg text-gray-400 leading-relaxed">
+            Olá! Meu nome é Gabriel Seabra e estou em transição para a área de
+            desenvolvimento Full Stack. Atualmente estudo tecnologias como
+            HTML, CSS, JavaScript, React e Next.js, desenvolvendo projetos
+            práticos para aprimorar minhas habilidades.
 
-            {/* CARD 1 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
-
-              <img src="https://picsum.photos/400/300" alt="Projeto 1" />
-
-              <div className="p-4">
-
-                <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
-                  Projeto Calculadora
-                </h3>
-
-                <p className="text-gray-600 mb-4">
-                  Uma calculadora feita com HTML, CSS e JavaScript com operações basicas.
-                </p>
-
-                <div className="flex gap-4 justify-center" >
-
-                  <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-                    Ver Site
-                  </a>
-
-                  <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
-                    GitHub
-                  </a>
-
-                </div>
-              </div>
-            </div>
-            
-            {/* CARD 2 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
-
-              <img src="https://picsum.photos/seed/p6/400/300" alt="Projeto 2" />
-
-              <div className="p-4">
-
-                <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
-                  Calculadora Saque-FGTS
-                </h3>
-
-                <p className="text-gray-600 mb-4">
-                  Calculadora do Saque-Aniversário do FGTS desenvolvida com HTML, CSS e JavaScript.
-                </p>
-
-                <div className="flex gap-4 justify-center" >
-
-                  <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-                    Ver Site
-                  </a>
-
-                  <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
-                    GitHub
-                  </a>
-
-                </div>
-              </div>
-            </div>
-
-            {/* CARD 3 */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
-
-              <img src="https://picsum.photos/seed/p1/400/300" alt="Projeto 3" />
-
-              <div className="p-4">
-
-                <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
-                  Calculadora Rescisão CLT
-                </h3>
-
-                <p className="text-gray-600 mb-4">
-                  Aplicação para gerenciar tarefas com armazenamento
-                  local no navegador.
-                </p>
-
-                <div className="flex gap-4 justify-center" >
-
-                  <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-                    Ver Site
-                  </a>
-
-                  <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
-                    GitHub
-                  </a>
-
-                </div>
-              </div>
-            </div>
-
-          </div>          
-
-        </section>
-
-        {/*SKILLS*/}
-        <section className="min-h-screen bg-gray-1000 px-8 py-16">
-
-          <h2 className="text-4xl font-bold text-center mb-6">
-            Skills
-          </h2>
-
-          <p className="text-center text-gray-400 mb-12">
-            Ao lado estou exibindo algumas habilidades que tenho.(Passe o mouse sobre os ícones para ver mais)
+            Tenho experiência profissional em outras áreas, o que me trouxe
+            disciplina, responsabilidade e foco em resolver problemas.
+            Meu objetivo é conquistar minha primeira oportunidade como
+            desenvolvedor e evoluir constantemente na área de tecnologia.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-10">
+        </div>
 
-            {/*Python*/}
-            <div className="flex flex-col items-center group cursor-pointer">
+      </section>
 
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+      {/* PROJETOS */}
+      <section className="min-h-screen px-8 py-16">
 
-              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-                Python
-              </span>
+        <h2 className="text-4xl font-bold text-center mb-12">
+          Projetos
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-8">
+
+          {/* CARD 1 */}
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+
+            <img src="https://picsum.photos/400/300" alt="Projeto 1" />
+
+            <div className="p-4">
+
+              <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                Projeto Calculadora
+              </h3>
+
+              <p className="text-gray-600 mb-4">
+                Uma calculadora feita com HTML, CSS e JavaScript com operações basicas.
+              </p>
+
+              <div className="flex gap-4 justify-center" >
+
+                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                  Ver Site
+                </a>
+
+                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                  GitHub
+                </a>
+
+              </div>
             </div>
-
-            {/*HTML*/}
-            <div className="flex flex-col items-center group cursor-pointer">
-
-              <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
-
-              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-                HTML
-              </span>
-            </div>
-
-            {/*CSS*/}
-            <div className="flex flex-col items-center group cursor-pointer">
-
-              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
-
-              <span className="opacity-0 group-hover:opacity-100 duration-300 mt-2 text-sm">
-                CSS
-              </span>
-            </div>
-
-            {/*JavaScript*/}
-            <div className="flex flex-col items-center group cursor-pointer">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
-
-              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-                JavaScript
-              </span>
-            </div>
-
-            {/*React*/}
-            <div className="flex flex-col items-center group cursor-pointer">
-
-              <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
-
-              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-                React
-              </span>
-            </div>
-
-            {/*Next.js*/}
-            <div className="flex flex-col items-center group cursor-pointer">
-
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
-
-              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-                Next.js
-              </span>
-            </div>
-
-            {/*Git*/}
-            <div className="flex flex-col items-center group cursor-pointer">
-
-              <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
-
-              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-                Git
-              </span>
-            </div>   
-
-
           </div>
 
+          {/* CARD 2 */}
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
 
+            <img src="https://picsum.photos/seed/p6/400/300" alt="Projeto 2" />
 
-        </section>
+            <div className="p-4">
 
+              <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                Calculadora Saque-FGTS
+              </h3>
 
+              <p className="text-gray-600 mb-4">
+                Calculadora do Saque-Aniversário do FGTS desenvolvida com HTML, CSS e JavaScript.
+              </p>
+
+              <div className="flex gap-4 justify-center" >
+
+                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                  Ver Site
+                </a>
+
+                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                  GitHub
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 3 */}
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+
+            <img src="https://picsum.photos/seed/p1/400/300" alt="Projeto 3" />
+
+            <div className="p-4">
+
+              <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                Calculadora Rescisão CLT
+              </h3>
+
+              <p className="text-gray-600 mb-4">
+                Aplicação para gerenciar tarefas com armazenamento
+                local no navegador.
+              </p>
+
+              <div className="flex gap-4 justify-center" >
+
+                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                  Ver Site
+                </a>
+
+                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                  GitHub
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+     {/*SKILLS*/}
+      <section className="min-h-screen bg-gray-1000 px-8 py-16">
+
+        <h2 className="text-4xl font-bold text-center mb-6">
+          Skills
+        </h2>
+
+        <p className="text-center text-gray-400 mb-12">
+          Ao lado estou exibindo algumas habilidades que tenho.(Passe o mouse sobre os ícones para ver mais)
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-10">
+
+          {/*Python*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+              Python
+            </span>
+          </div>
+
+          {/*HTML*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+              HTML
+            </span>
+          </div>
+
+          {/*CSS*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 duration-300 mt-2 text-sm">
+              CSS
+            </span>
+          </div>
+
+          {/*JavaScript*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+              JavaScript
+            </span>
+          </div>
+
+          {/*React*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+              React
+            </span>
+          </div>
+
+          {/*Next.js*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+              Next.js
+            </span>
+          </div>
+
+          {/*Git*/}
+          <div className="flex flex-col items-center group cursor-pointer">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+              Git
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/*REDES*/}
+      <footer className="min-h[40vh] bg-black text-white flex flex-col items-center justify-center gap-8">
+
+        <h2 className="text-3xl font-bold">
+          Redes
+        </h2>
+
+        <div className="flex gap-10">
+
+          {/*LINKEDIN*/}
+          <a href="https://www.linkedin.com/" target="_blank" className="transition-transform duration-300 hover:scale-110">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width={50}alt="LinkedIn" />
+          </a>
+
+          {/*GITHUB*/}
+          <a href="https://www.github.com/" target="_blank" className="transition-transform duration-300 hover:scale-110">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width={50} alt="GitHub" />
+          </a>
+
+          {/*EMAIL*/}
+          <a href="mailto:gmatos@hotmail.com.br" className="transition-transform duration-300 hover:scale-110">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width={50} alt="Email" />
+          </a>
+        </div>
+
+        {/*COPYRIGHT*/}
+        <p className="text-sm text-gray-400">
+           © 2026 Gabriel Seabra - Todos os direitos reservados
+        </p>
+      </footer>
     </div>
   );
 }
