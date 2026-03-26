@@ -138,7 +138,7 @@ export default function home() {
             {/* CARD 3 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
 
-              <img src="https://picsum.photos/seed/p1/400/300" alt="Projeto 2" />
+              <img src="https://picsum.photos/seed/p1/400/300" alt="Projeto 3" />
 
               <div className="p-4">
 
@@ -166,6 +166,95 @@ export default function home() {
             </div>
 
           </div>          
+
+        </section>
+
+        {/*SKILLS*/}
+        <section className="min-h-screen bg-gray-1000 px-8 py-16">
+
+          <h2 className="text-4xl font-bold text-center mb-6">
+            Skills
+          </h2>
+
+          <p className="text-center text-gray-400 mb-12">
+            Ao lado estou exibindo algumas habilidades que tenho.(Passe o mouse sobre os ícones para ver mais)
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-10">
+
+            {/*Python*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                Python
+              </span>
+            </div>
+
+            {/*HTML*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                HTML
+              </span>
+            </div>
+
+            {/*CSS*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 duration-300 mt-2 text-sm">
+                CSS
+              </span>
+            </div>
+
+            {/*JavaScript*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                JavaScript
+              </span>
+            </div>
+
+            {/*React*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                React
+              </span>
+            </div>
+
+            {/*Next.js*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                Next.js
+              </span>
+            </div>
+
+            {/*Git*/}
+            <div className="flex flex-col items-center group cursor-pointer">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                Git
+              </span>
+            </div>   
+
+
+          </div>
+
+
 
         </section>
 
