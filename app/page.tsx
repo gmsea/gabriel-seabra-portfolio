@@ -3,7 +3,7 @@ export default function home() {
     <div>
 
       {/* NAVBAR */}
-      <header className="w-full bg-black text-white p-4 flex justify-between items-center">
+      <header className="w-full bg-black text-white p-4 flex justify-end items-center">
 
         <nav className="flex gap-6">
           <a href="#" className="hover:text-gray-400">Início</a>
@@ -252,7 +252,8 @@ export default function home() {
       {/*REDES*/}
       <footer className="min-h[40vh] bg-black text-white flex flex-col items-center justify-center gap-8">
 
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold  py-4
+        ">
           Redes
         </h2>
 
