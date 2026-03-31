@@ -15,7 +15,7 @@ export default function home() {
       </header>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center gap-16 py-8">
+      <section className="min-h-screen flex items-center justify-center gap-16 pt-24 pb-16">
 
         {/* TEXTO */}
         <div>
@@ -40,27 +40,41 @@ export default function home() {
       </section>
 
       {/* SOBRE */}
-      <section className="min-h-screen flex items-center justify-center bg-gray-0 px-8">
+      <section className="min-h-screen flex items-center justify-center bg-gray-10 px-20">
 
-        <div className="max-w-3xl text-center">
+        <div className="flex flex-col md:flex-row gap-10 max-w-6xl w-full">
 
-          <h2 className="text-4xl font-bold mb-6">
-            Sobre Mim
-          </h2>
+          {/*BLOCO ESQUERDO*/}
+          <div className="flex flex-col items-center p-8 rounded-xl shadow lg w-full md:w-1/2" bg-gray-10>
 
-          <p className="text-lg text-gray-400 leading-relaxed">
-            Olá! Meu nome é Gabriel Seabra e estou em transição para a área de
-            desenvolvimento Full Stack. Atualmente estudo tecnologias como
-            HTML, CSS, JavaScript, React e Next.js, desenvolvendo projetos
-            práticos para aprimorar minhas habilidades.
+            <h2 className="text-4xl font-bold mb-6">
+              Sobre Mim
+            </h2>
 
-            Tenho experiência profissional em outras áreas, o que me trouxe
-            disciplina, responsabilidade e foco em resolver problemas.
-            Meu objetivo é conquistar minha primeira oportunidade como
-            desenvolvedor e evoluir constantemente na área de tecnologia.
-          </p>
+            <img src="https://picsum.photos/250" alt="Foto Gabriel className="w-64 h-64 object-cover rounded-lg />
 
-        </div>
+          </div>
+
+          {/*BLOCO DIREITO*/}
+
+          <div className="p-8 rounded-xl shadow-lg w-full md:w-1/2">
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+               Olá! Meu nome é Gabriel Seabra e estou em transição para a área de
+               desenvolvimento Full Stack. Atualmente estudo tecnologias como
+               HTML, CSS, JavaScript, React e Next.js, desenvolvendo projetos
+               práticos para aprimorar minhas habilidades.
+            </p>
+              
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Tenho experiência profissional em outras áreas, o que me trouxe
+              disciplina, responsabilidade e foco em resolver problemas.
+              Meu objetivo é conquistar minha primeira oportunidade como
+              desenvolvedor e evoluir constantemente na área de tecnologia.
+            </p>
+
+          </div>
+          </div>
 
       </section>
 
