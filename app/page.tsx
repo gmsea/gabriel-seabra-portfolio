@@ -47,7 +47,7 @@ export default function home() {
           {/*BLOCO ESQUERDO*/}
           <div className="flex items-center justify-center p-8 rounded-xl  w-full md:w-1/2">
 
-            <img src="https://picsum.photos/250" alt="Foto Gabriel" className="w-64 h-64 object-cover rounded-lg" />
+            <img src="/coding.svg" alt="Ilustração programador" className="w-123 h-auto" />
 
           </div>
 
