@@ -60,12 +60,12 @@ export default function home() {
             </h2>
 
             <p className="text-lg text-gray-400 leading-relaxed mb-4">
-               Olá! Meu nome é Gabriel Seabra e estou em transição para a área de
-               desenvolvimento Full Stack. Atualmente estudo tecnologias como
-               HTML, CSS, JavaScript, React e Next.js, desenvolvendo projetos
-               práticos para aprimorar minhas habilidades.
+              Olá! Meu nome é Gabriel Seabra e estou em transição para a área de
+              desenvolvimento Full Stack. Atualmente estudo tecnologias como
+              HTML, CSS, JavaScript, React e Next.js, desenvolvendo projetos
+              práticos para aprimorar minhas habilidades.
             </p>
-              
+
             <p className="text-lg text-gray-400 leading-relaxed">
               Tenho experiência profissional em outras áreas, o que me trouxe
               disciplina, responsabilidade e foco em resolver problemas.
@@ -74,7 +74,7 @@ export default function home() {
             </p>
 
           </div>
-          </div>
+        </div>
 
       </section>
 
@@ -179,22 +179,33 @@ export default function home() {
 
       </section>
 
-     {/*SKILLS*/}
-      <section className="min-h-screen bg-gray-1000 px-8 py-16">
+      {/*SKILLS*/}
+      <section className="min-h-screen flex items-center justify-center px-20">
 
-        <h2 className="text-4xl font-bold text-center mb-6">
-          Skills
-        </h2>
+        <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
-        <p className="text-center text-gray-400 mb-12">
-          Ao lado estou exibindo algumas habilidades que tenho.(Passe o mouse sobre os ícones para ver mais)
-        </p>
+          {/*BLOCO ESQUERDO*/}
+          <div className="flex flex-col justify-center w-full md:w-1/2">
 
-        <div className="flex flex-wrap justify-center gap-10">
+            <h2 className="text-4xl font-bold text-center md:text-left mb-6">
+              Skills
+            </h2>
 
-          {/*Python*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+            <p className="text-center text-gray-400 md:text-left">
+              Ao lado estou exibindo algumas habilidades que tenho.
+            </p>
+            <p className="text-center text-gray-600 md:text-left">
+              (Passe o mouse sobre os ícones para ver mais)
+            </p>
 
+          </div>
+
+          {/*BLOCO DIREITO*/}
+          <div className="w-full md:w-1/2 flex flex-wrap gap-8 justify-center">
+
+            {/*Python*/}
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+          
             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
             <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
@@ -203,7 +214,7 @@ export default function home() {
           </div>
 
           {/*HTML*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
             <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -213,7 +224,7 @@ export default function home() {
           </div>
 
           {/*CSS*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
             <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -223,7 +234,7 @@ export default function home() {
           </div>
 
           {/*JavaScript*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
             <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
@@ -232,7 +243,7 @@ export default function home() {
           </div>
 
           {/*React*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
             <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -242,7 +253,7 @@ export default function home() {
           </div>
 
           {/*Next.js*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -252,7 +263,7 @@ export default function home() {
           </div>
 
           {/*Git*/}
-          <div className="flex flex-col items-center group cursor-pointer">
+          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
             <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -260,7 +271,9 @@ export default function home() {
               Git
             </span>
           </div>
+          </div>
         </div>
+
       </section>
 
       {/*REDES*/}
@@ -276,7 +289,7 @@ export default function home() {
           {/*LINKEDIN*/}
           <a href="https://www.linkedin.com/" target="_blank" className="transition-transform duration-300 hover:scale-110">
 
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width={50}alt="LinkedIn" />
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width={50} alt="LinkedIn" />
           </a>
 
           {/*GITHUB*/}
@@ -292,7 +305,7 @@ export default function home() {
 
         {/*COPYRIGHT*/}
         <p className="text-sm text-gray-400">
-           © 2026 Gabriel Seabra - Todos os direitos reservados
+          © 2026 Gabriel Seabra - Todos os direitos reservados
         </p>
       </footer>
     </div>
