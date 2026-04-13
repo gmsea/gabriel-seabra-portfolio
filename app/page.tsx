@@ -90,7 +90,7 @@ export default function home() {
           {/* CARD 1 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
 
-            <img src="https://picsum.photos/400/300" alt="Projeto 1" />
+            <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" />
 
             <div className="p-4">
 
@@ -119,7 +119,7 @@ export default function home() {
           {/* CARD 2 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
 
-            <img src="https://picsum.photos/seed/p6/400/300" alt="Projeto 2" />
+            <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" />
 
             <div className="p-4">
 
@@ -148,7 +148,7 @@ export default function home() {
           {/* CARD 3 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
 
-            <img src="https://picsum.photos/seed/p1/400/300" alt="Projeto 3" />
+            <img src="/Projeto-calculadora-rescisao.jpeg" alt="Projeto 3" />
 
             <div className="p-4">
 
@@ -159,6 +159,36 @@ export default function home() {
               <p className="text-gray-600 mb-4">
                 Aplicação para gerenciar tarefas com armazenamento
                 local no navegador.
+              </p>
+
+              <div className="flex gap-4 justify-center" >
+
+                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                  Ver Site
+                </a>
+
+                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                  GitHub
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 4 */}
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+
+            <img src="/Projeto-portifolio.jpeg" alt="Projeto 4" />
+
+            <div className="p-4">
+
+              <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
+                Projeto Portifólio
+              </h3>
+
+              <p className="text-gray-600 mb-4">
+                Meu portfólio pessoal desenvolvido com Next.js e Tailwind CSS,
+                apresentando meus projetos, habilidades e informações profissionais.
               </p>
 
               <div className="flex gap-4 justify-center" >
@@ -204,73 +234,73 @@ export default function home() {
           <div className="w-full md:w-1/2 flex flex-wrap gap-8 justify-center">
 
             {/*Python*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
-          
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
-            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-              Python
-            </span>
-          </div>
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
-          {/*HTML*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                Python
+              </span>
+            </div>
 
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+            {/*HTML*/}
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
-            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-              HTML
-            </span>
-          </div>
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
-          {/*CSS*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                HTML
+              </span>
+            </div>
 
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+            {/*CSS*/}
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
-            <span className="opacity-0 group-hover:opacity-100 duration-300 mt-2 text-sm">
-              CSS
-            </span>
-          </div>
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
-          {/*JavaScript*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+              <span className="opacity-0 group-hover:opacity-100 duration-300 mt-2 text-sm">
+                CSS
+              </span>
+            </div>
 
-            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-              JavaScript
-            </span>
-          </div>
+            {/*JavaScript*/}
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
-          {/*React*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                JavaScript
+              </span>
+            </div>
 
-            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+            {/*React*/}
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
-            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-              React
-            </span>
-          </div>
+              <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
-          {/*Next.js*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                React
+              </span>
+            </div>
 
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+            {/*Next.js*/}
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
-            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-              Next.js
-            </span>
-          </div>
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
-          {/*Git*/}
-          <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                Next.js
+              </span>
+            </div>
 
-            <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+            {/*Git*/}
+            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
 
-            <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
-              Git
-            </span>
-          </div>
+              <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
+
+              <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
+                Git
+              </span>
+            </div>
           </div>
         </div>
 
