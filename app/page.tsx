@@ -88,11 +88,11 @@ export default function home() {
         <div className="flex flex-wrap justify-center gap-8">
 
           {/* CARD 1 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
 
             <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" />
 
-            <div className="p-4">
+            <div className="p-4 flex flex-col flex-grow">
 
               <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
                 Projeto Calculadora
@@ -102,7 +102,7 @@ export default function home() {
                 Uma calculadora feita com HTML, CSS e JavaScript com operações basicas.
               </p>
 
-              <div className="flex gap-4 justify-center" >
+              <div className="flex gap-4 justify-center mt-auto" >
 
                 <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
@@ -117,11 +117,11 @@ export default function home() {
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
 
             <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" />
 
-            <div className="p-4">
+            <div className="p-4 flex flex-col flex-grow">
 
               <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
                 Calculadora Saque-FGTS
@@ -131,7 +131,7 @@ export default function home() {
                 Calculadora do Saque-Aniversário do FGTS desenvolvida com HTML, CSS e JavaScript.
               </p>
 
-              <div className="flex gap-4 justify-center" >
+              <div className="flex gap-4 justify-center mt-auto" >
 
                 <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
@@ -146,11 +146,11 @@ export default function home() {
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
 
             <img src="/Projeto-calculadora-rescisao.jpeg" alt="Projeto 3" />
 
-            <div className="p-4">
+            <div className="p-4 flex flex-col flex-grow">
 
               <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
                 Calculadora Rescisão CLT
@@ -161,7 +161,7 @@ export default function home() {
                 local no navegador.
               </p>
 
-              <div className="flex gap-4 justify-center" >
+              <div className="flex gap-4 justify-center mt-auto" >
 
                 <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
@@ -176,11 +176,11 @@ export default function home() {
           </div>
 
           {/* CARD 4 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
 
             <img src="/Projeto-portifolio.jpeg" alt="Projeto 4" />
 
-            <div className="p-4">
+            <div className="p-4 flex flex-col flex-grow">
 
               <h3 className="text-xl font-bold mb-2 text-center text-gray-700">
                 Projeto Portifólio
@@ -191,7 +191,7 @@ export default function home() {
                 apresentando meus projetos, habilidades e informações profissionais.
               </p>
 
-              <div className="flex gap-4 justify-center" >
+              <div className="flex gap-4 justify-center mt-auto" >
 
                 <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
