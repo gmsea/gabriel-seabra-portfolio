@@ -88,9 +88,9 @@ export default function home() {
         <div className="flex flex-wrap justify-center gap-8">
 
           {/* CARD 1 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
-            <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" />
+            <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" className="w-full object-cover transition duration-300 hover:scale-115"/>
 
             <div className="p-4 flex flex-col flex-grow">
 
@@ -104,11 +104,11 @@ export default function home() {
 
               <div className="flex gap-4 justify-center mt-auto" >
 
-                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                <a href="#" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
                 </a>
 
-                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                <a href="http://github.com/gmsea/calculadora-js" target="_blank" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
                   GitHub
                 </a>
 
@@ -117,9 +117,9 @@ export default function home() {
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
-            <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" />
+            <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" className="w-full object-cover transition duration-300 hover:scale-115"/>
 
             <div className="p-4 flex flex-col flex-grow">
 
@@ -133,11 +133,11 @@ export default function home() {
 
               <div className="flex gap-4 justify-center mt-auto" >
 
-                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                <a href="#" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
                 </a>
 
-                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                <a href="https://github.com/gmsea/calculadora-saque-aniversario-fgts" target="_blank" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
                   GitHub
                 </a>
 
@@ -146,9 +146,9 @@ export default function home() {
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
-            <img src="/Projeto-calculadora-rescisao.jpeg" alt="Projeto 3" />
+            <img src="/Projeto-calculadora-rescisao.jpeg" alt="Projeto Calculadora Rescisão" className="w-full object-cover transition duration-300 hover:scale-115" />
 
             <div className="p-4 flex flex-col flex-grow">
 
@@ -163,11 +163,11 @@ export default function home() {
 
               <div className="flex gap-4 justify-center mt-auto" >
 
-                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                <a href="#" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
                 </a>
 
-                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                <a href="https://github.com/gmsea/calculadora-rescisao-clt" target="_blank" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
                   GitHub
                 </a>
 
@@ -176,9 +176,9 @@ export default function home() {
           </div>
 
           {/* CARD 4 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
-            <img src="/Projeto-portifolio.jpeg" alt="Projeto 4" />
+            <img src="/Projeto-portifolio.jpeg" alt="Projeto Portifólio" className="w-full object-cover transition duration-300 hover:scale-115" />
 
             <div className="p-4 flex flex-col flex-grow">
 
@@ -193,11 +193,11 @@ export default function home() {
 
               <div className="flex gap-4 justify-center mt-auto" >
 
-                <a href="#" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                <a href="#" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                   Ver Site
                 </a>
 
-                <a href="#" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
+                <a href="https://github.com/gmsea/gabriel-seabra-portfolio" target="_blank" className="bg-[#083358] border border-black px-4 py-2 rounded hover:bg-gray-800">
                   GitHub
                 </a>
 
