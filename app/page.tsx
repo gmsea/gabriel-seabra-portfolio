@@ -15,7 +15,7 @@ export default function home() {
       </header>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center gap-16 pt-24 pb-16">
+      <section className="min-h-screen flex items-center justify-center gap-16 py-20 px-8">
 
         {/* TEXTO */}
         <div>
@@ -40,14 +40,14 @@ export default function home() {
       </section>
 
       {/* SOBRE */}
-      <section className="min-h-screen flex items-center justify-center bg-gray-10 px-20">
+      <section className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
           {/*BLOCO ESQUERDO*/}
           <div className="flex items-center justify-center p-8 rounded-xl  w-full md:w-1/2">
 
-            <img src="/coding.svg" alt="Ilustração programador" className="w-123 h-auto" />
+            <img src="/coding.svg" alt="Ilustração programador" className="w-full max-w-md" />
 
           </div>
 
@@ -79,7 +79,7 @@ export default function home() {
       </section>
 
       {/* PROJETOS */}
-      <section className="min-h-screen px-8 py-16">
+      <section className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
 
         <h2 className="text-4xl font-bold text-center mb-12">
           Projetos
@@ -210,7 +210,7 @@ export default function home() {
       </section>
 
       {/*SKILLS*/}
-      <section className="min-h-screen flex items-center justify-center px-20">
+      <section className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
@@ -307,7 +307,7 @@ export default function home() {
       </section>
 
       {/*REDES*/}
-      <footer className="min-h[40vh] bg-black text-white flex flex-col items-center justify-center gap-8">
+      <footer className="min-h-[20vh] bg-black text-white flex flex-col items-center justify-center gap-8">
 
         <h2 className="text-3xl font-bold  py-4
         ">
