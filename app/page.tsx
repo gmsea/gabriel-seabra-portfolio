@@ -186,7 +186,7 @@ export default function home() {
             Gabriel Seabra
           </h2>
 
-          <p className="text-2xl mt-3 text-gray-500">
+          <p className="text-2xl mt-3 text-blue-400 font-bold">
             Desenvolvedor Full Stack
           </p>
         </div>
@@ -380,10 +380,10 @@ export default function home() {
               Skills
             </h2>
 
-            <p className="text-center text-gray-400 md:text-left">
+            <p className="text-lg text-center text-gray-400 md:text-left">
               Ao lado estou exibindo algumas habilidades que tenho.
             </p>
-            <p className="text-center text-gray-600 md:text-left">
+            <p className="text-center text-blue-400 font-bold md:text-left">
               (Passe o mouse sobre os ícones para ver mais)
             </p>
 
@@ -493,7 +493,7 @@ export default function home() {
         </div>
 
         {/*COPYRIGHT*/}
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-blue-400 font-bold">
           © 2026 Gabriel Seabra - Todos os direitos reservados
         </p>
       </footer>
