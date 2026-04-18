@@ -6,16 +6,16 @@ export default function home() {
       <header className="w-full bg-black text-white p-4 flex justify-end items-center">
 
         <nav className="flex gap-6">
-          <a href="#" className="hover:text-gray-400">Início</a>
-          <a href="#" className="hover:text-gray-400">Sobre</a>
-          <a href="#" className="hover:text-gray-400">Projetos</a>
-          <a href="#" className="hover:text-gray-400">Skills</a>
-          <a href="#" className="hover:text-gray-400">Redes</a>
+          <a href="#inicio" className="hover:text-gray-400">Início</a>
+          <a href="#sobre" className="hover:text-gray-400">Sobre</a>
+          <a href="#projetos" className="hover:text-gray-400">Projetos</a>
+          <a href="#skills" className="hover:text-gray-400">Skills</a>
+          <a href="#redes" className="hover:text-gray-400">Redes</a>
         </nav>
       </header>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center gap-16 py-20 px-8">
+      <section id="inicio" className="min-h-screen flex items-center justify-center gap-16 py-20 px-8">
 
         {/* TEXTO */}
         <div>
@@ -40,7 +40,7 @@ export default function home() {
       </section>
 
       {/* SOBRE */}
-      <section className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
+      <section id="sobre" className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
@@ -79,7 +79,7 @@ export default function home() {
       </section>
 
       {/* PROJETOS */}
-      <section className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
+      <section id="projetos" className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
 
         <h2 className="text-4xl font-bold text-center mb-12">
           Projetos
@@ -210,7 +210,7 @@ export default function home() {
       </section>
 
       {/*SKILLS*/}
-      <section className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
+      <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
@@ -307,7 +307,7 @@ export default function home() {
       </section>
 
       {/*REDES*/}
-      <footer className="min-h-[20vh] bg-black text-white flex flex-col items-center justify-center gap-8">
+      <footer id="redes" className="min-h-[20vh] bg-black text-white flex flex-col items-center justify-center gap-8">
 
         <h2 className="text-3xl font-bold  py-4
         ">
