@@ -1,4 +1,82 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function home() {
+
+  const [activeSection, setActiveSection] = useState("inicio")
+
+  useEffect(() => {
+
+    const SECTION_IDS = [
+      "inicio",
+      "sobre",
+      "projetos",
+      "skills",
+      "redes"
+    ];
+
+    const updateActiveSection = () => {
+
+      const marker = 150; // altura abaixo do header
+      let current = "inicio";
+
+      // 🔥 Detectar se chegou no final da página
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const pageHeight = document.body.offsetHeight;
+
+      const isAtBottom = scrollPosition >= pageHeight - 5;
+
+      if (isAtBottom) {
+        setActiveSection("redes");
+        return;
+      }
+
+      // 🔥 Detectar sections normalmente
+      for (const id of SECTION_IDS) {
+
+        const element = document.getElementById(id);
+
+        if (!element) continue;
+
+        const top = element.getBoundingClientRect().top;
+
+        if (top <= marker) {
+          current = id;
+        }
+
+      }
+
+      setActiveSection(current);
+
+    };
+
+    let rafId = 0;
+
+    const onScroll = () => {
+
+      cancelAnimationFrame(rafId);
+
+      rafId = requestAnimationFrame(updateActiveSection);
+
+    };
+
+    updateActiveSection();
+
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+
+    return () => {
+
+      cancelAnimationFrame(rafId);
+
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+
+    };
+
+  }, []);
+
   return (
     <div>
 
@@ -6,11 +84,92 @@ export default function home() {
       <header className="fixed top-0 left-0 w-full text-white p-4 flex justify-end items-center z-50">
 
         <nav className="flex gap-6">
-          <a href="#inicio" className="hover:text-gray-400">Início</a>
-          <a href="#sobre" className="hover:text-gray-400">Sobre</a>
-          <a href="#projetos" className="hover:text-gray-400">Projetos</a>
-          <a href="#skills" className="hover:text-gray-400">Skills</a>
-          <a href="#redes" className="hover:text-gray-400">Redes</a>
+
+          {/* INICIO */}
+          <a href="#inicio"
+            className={`relative hover:text-gray-400 ${activeSection === "inicio"
+                ? "text-blue-400 font-bold"
+                : ""
+              }`}
+          >
+            Início
+
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "inicio"
+                  ? "w-full"
+                  : "w-0"
+                }`}
+            />
+          </a>
+
+          {/* SOBRE */}
+          <a href="#sobre"
+            className={`relative hover:text-gray-400 ${activeSection === "sobre"
+                ? "text-blue-400 font-bold"
+                : ""
+              }`}
+          >
+            Sobre
+
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "sobre"
+                  ? "w-full"
+                  : "w-0"
+                }`}
+            />
+          </a>
+
+          {/* PROJETOS */}
+          <a href="#projetos"
+            className={`relative hover:text-gray-400 ${activeSection === "projetos"
+                ? "text-blue-400 font-bold"
+                : ""
+              }`}
+          >
+            Projetos
+
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "projetos"
+                  ? "w-full"
+                  : "w-0"
+                }`}
+            />
+          </a>
+
+          {/* SKILLS */}
+          <a href="#skills"
+            className={`relative hover:text-gray-400 ${activeSection === "skills"
+                ? "text-blue-400 font-bold"
+                : ""
+              }`}
+          >
+            Skills
+
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "skills"
+                  ? "w-full"
+                  : "w-0"
+                }`}
+            />
+          </a>
+
+          {/* REDES */}
+          <a href="#redes"
+            className={`relative hover:text-gray-400 ${activeSection === "redes"
+                ? "text-blue-400 font-bold"
+                : ""
+              }`}
+          >
+            Redes
+
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "redes"
+                  ? "w-full"
+                  : "w-0"
+                }`}
+            />
+          </a>
+
         </nav>
       </header>
 
@@ -90,7 +249,7 @@ export default function home() {
           {/* CARD 1 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
-            <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" className="w-full object-cover transition duration-300 hover:scale-115"/>
+            <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" className="w-full object-cover transition duration-300 hover:scale-115" />
 
             <div className="p-4 flex flex-col flex-grow">
 
@@ -119,7 +278,7 @@ export default function home() {
           {/* CARD 2 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
-            <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" className="w-full object-cover transition duration-300 hover:scale-115"/>
+            <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" className="w-full object-cover transition duration-300 hover:scale-115" />
 
             <div className="p-4 flex flex-col flex-grow">
 
@@ -210,7 +369,7 @@ export default function home() {
       </section>
 
       {/*SKILLS*/}
-      <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
+      <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-20 px-8 mb-40">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
