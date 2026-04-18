@@ -3,7 +3,7 @@ export default function home() {
     <div>
 
       {/* NAVBAR */}
-      <header className="w-full bg-black text-white p-4 flex justify-end items-center">
+      <header className="fixed top-0 left-0 w-full text-white p-4 flex justify-end items-center z-50">
 
         <nav className="flex gap-6">
           <a href="#inicio" className="hover:text-gray-400">Início</a>
@@ -15,7 +15,7 @@ export default function home() {
       </header>
 
       {/* HERO */}
-      <section id="inicio" className="min-h-screen flex items-center justify-center gap-16 py-20 px-8">
+      <section id="inicio" className="min-h-screen flex items-center justify-center gap-16 py-20 px-8 pt-24">
 
         {/* TEXTO */}
         <div>
