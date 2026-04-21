@@ -88,16 +88,16 @@ export default function home() {
           {/* INICIO */}
           <a href="#inicio"
             className={`relative hover:text-gray-400 ${activeSection === "inicio"
-                ? "text-blue-400 font-bold"
-                : ""
+              ? "text-blue-400 font-bold"
+              : ""
               }`}
           >
             Início
 
             <span
               className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "inicio"
-                  ? "w-full"
-                  : "w-0"
+                ? "w-full"
+                : "w-0"
                 }`}
             />
           </a>
@@ -105,16 +105,16 @@ export default function home() {
           {/* SOBRE */}
           <a href="#sobre"
             className={`relative hover:text-gray-400 ${activeSection === "sobre"
-                ? "text-blue-400 font-bold"
-                : ""
+              ? "text-blue-400 font-bold"
+              : ""
               }`}
           >
             Sobre
 
             <span
               className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "sobre"
-                  ? "w-full"
-                  : "w-0"
+                ? "w-full"
+                : "w-0"
                 }`}
             />
           </a>
@@ -122,16 +122,16 @@ export default function home() {
           {/* PROJETOS */}
           <a href="#projetos"
             className={`relative hover:text-gray-400 ${activeSection === "projetos"
-                ? "text-blue-400 font-bold"
-                : ""
+              ? "text-blue-400 font-bold"
+              : ""
               }`}
           >
             Projetos
 
             <span
               className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "projetos"
-                  ? "w-full"
-                  : "w-0"
+                ? "w-full"
+                : "w-0"
                 }`}
             />
           </a>
@@ -139,16 +139,16 @@ export default function home() {
           {/* SKILLS */}
           <a href="#skills"
             className={`relative hover:text-gray-400 ${activeSection === "skills"
-                ? "text-blue-400 font-bold"
-                : ""
+              ? "text-blue-400 font-bold"
+              : ""
               }`}
           >
             Skills
 
             <span
               className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "skills"
-                  ? "w-full"
-                  : "w-0"
+                ? "w-full"
+                : "w-0"
                 }`}
             />
           </a>
@@ -156,16 +156,16 @@ export default function home() {
           {/* REDES */}
           <a href="#redes"
             className={`relative hover:text-gray-400 ${activeSection === "redes"
-                ? "text-blue-400 font-bold"
-                : ""
+              ? "text-blue-400 font-bold"
+              : ""
               }`}
           >
             Redes
 
             <span
               className={`absolute left-0 -bottom-1 h-[2px] bg-blue-400 transition-all duration-300 ${activeSection === "redes"
-                  ? "w-full"
-                  : "w-0"
+                ? "w-full"
+                : "w-0"
                 }`}
             />
           </a>
@@ -174,7 +174,8 @@ export default function home() {
       </header>
 
       {/* HERO */}
-      <section id="inicio" className="min-h-screen flex items-center justify-center gap-16 py-20 px-8 pt-24">
+      <section id="inicio" className="scroll-mt-24 min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 py-20 px-6 md:px-8 pt-24 text-center md:text-left">
+
 
         {/* TEXTO */}
         <div>
@@ -193,13 +194,13 @@ export default function home() {
 
         {/* IMAGEM */}
         <div className="animate-bounce">
-          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" width={220} />
+          <img src="\hero.png" className="w-60 md:56" />
         </div>
 
       </section>
 
       {/* SOBRE */}
-      <section id="sobre" className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
+      <section id="sobre" className="min-h-screen flex flex-col items-center justify-center py-20 px-6 md:px-8">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
@@ -238,7 +239,7 @@ export default function home() {
       </section>
 
       {/* PROJETOS */}
-      <section id="projetos" className="min-h-screen flex flex-col items-center justify-center py-20 px-8">
+      <section id="projetos" className="min-h-screen flex flex-col items-center justify-center py-20 px-6 md:px-8">
 
         <h2 className="text-4xl font-bold text-center mb-12">
           Projetos
@@ -247,7 +248,7 @@ export default function home() {
         <div className="flex flex-wrap justify-center gap-8">
 
           {/* CARD 1 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
             <img src="/Projeto-calculadora.jpeg" alt="Projeto Calculadora" className="w-full object-cover transition duration-300 hover:scale-115" />
 
@@ -276,7 +277,7 @@ export default function home() {
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
             <img src="/Projeto-fgts.jpeg" alt="Projeto Calculadora de Saque FGTS" className="w-full object-cover transition duration-300 hover:scale-115" />
 
@@ -305,7 +306,7 @@ export default function home() {
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
             <img src="/Projeto-calculadora-rescisao.jpeg" alt="Projeto Calculadora Rescisão" className="w-full object-cover transition duration-300 hover:scale-115" />
 
@@ -335,7 +336,7 @@ export default function home() {
           </div>
 
           {/* CARD 4 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-80 flex flex-col transition transform hover:-translate-y-5 hover:shadow-2xl duration-300">
 
             <img src="/Projeto-portifolio.jpeg" alt="Projeto Portifólio" className="w-full object-cover transition duration-300 hover:scale-115" />
 
@@ -369,7 +370,7 @@ export default function home() {
       </section>
 
       {/*SKILLS*/}
-      <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-20 px-8 mb-40">
+      <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-20 px-6 md:px-8 mb-40">
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full">
 
@@ -383,7 +384,7 @@ export default function home() {
             <p className="text-lg text-center text-gray-400 md:text-left">
               Ao lado estou exibindo algumas habilidades que tenho.
             </p>
-            <p className="text-center text-blue-400 font-bold md:text-left">
+            <p className="text-center text-blue-400 md:text-left">
               (Passe o mouse sobre os ícones para ver mais)
             </p>
 
@@ -393,7 +394,7 @@ export default function home() {
           <div className="w-full md:w-1/2 flex flex-wrap gap-8 justify-center">
 
             {/*Python*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[80px] md:w-[100px]">
 
               <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -403,7 +404,7 @@ export default function home() {
             </div>
 
             {/*HTML*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[100px]">
 
               <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -413,7 +414,7 @@ export default function home() {
             </div>
 
             {/*CSS*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[80px] md:w-[100px]">
 
               <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -423,7 +424,7 @@ export default function home() {
             </div>
 
             {/*JavaScript*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[100px]">
               <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
               <span className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 text-sm">
@@ -432,7 +433,7 @@ export default function home() {
             </div>
 
             {/*React*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[100px]">
 
               <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -442,7 +443,7 @@ export default function home() {
             </div>
 
             {/*Next.js*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[100px]">
 
               <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -452,7 +453,7 @@ export default function home() {
             </div>
 
             {/*Git*/}
-            <div className="flex flex-col items-center group cursor-pointer w-[100px]">
+            <div className="flex flex-col items-center group cursor-pointer w-[80px] md:w-[100px]">
 
               <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" width={100} className="transition-transform duration-300 group-hover:scale-90" />
 
@@ -493,7 +494,7 @@ export default function home() {
         </div>
 
         {/*COPYRIGHT*/}
-        <p className="text-sm text-blue-400 font-bold">
+        <p className="text-sm text-blue-400">
           © 2026 Gabriel Seabra - Todos os direitos reservados
         </p>
       </footer>
